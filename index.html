@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <style>
+        body{
+            background-color:lightcyan;
+        }
+        .main {
+            position: relative;
+        }
+        .header h3{
+            color:coral;
+        }
+        h2{
+            font-weight: bold;
+            font-size: 75px;
+        }
+        h2 span{
+            color: darkslateblue;
+        }
+        .main.beauty{
+            position: absolute;
+            float: left;
+        }
+        .main .beauty img{
+            height: 150px;
+            width: 200px;
+            float:left;
+        }
+        .main .beauty h4{
+            font-weight: bold;
+            display: inline;
+            padding: 20px;
+        }
+        .main .beauty p{
+            
+            display: inline;
+            padding: 10px;
+            position: absolute;
+            left: 210px;
+            
+        }
+        .construction{
+            position: absolute;
+            right: 40px;
+        }
+        .construction img {
+            height:150px;
+            width:200px;
+            float: left;
+        }
+        .construction h4 {
+            font-weight: bold;
+            display: inline;
+            
+            position: absolute;
+            right:180px;
+            bottom: 113px
+        }
+        .construction p {
+            display: inline;
+            padding: 10px;
+            position: relative;
+            margin-top: 0px;
+            top:20px;
+            float: left;
+            left:10px;
+        }
+        .footer {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        @media(min-width:456px) and (max-width:650px){
+        body{
+            background-color:lightsalmon;
+        }
+
+        .main.beauty{
+            position: relative;
+            float: left;
+            display: block;
+        }
+
+        .main .beauty img{
+            height: 150px;
+            width: 200px;
+            float:left;
+            display: block;
+            position: absolute;
+        }
+
+        .main .beauty h4{
+            font-weight: bold;
+            display: block;
+            padding: 20px;
+            position: absolute;
+            padding: 0px;
+            margin: 0px;
+            margin-left:220px;
+        }
+
+        .main .beauty p{
+            
+            display: inline;
+            padding: 10px;
+            position: absolute;
+            left: 210px;
+            
+        }
+           
+        .construction{
+            position: relative;
+            float:left;
+            top: 180px;
+            left: 1px;
+        }
+
+        .construction img {
+            height:150px;
+            width:200px;
+            float: left;
+            display: block;
+            position: absolute;
+        }
+
+        .construction h4 {
+            font-weight: bold;
+            display: inline;            
+            position: absolute;            
+            bottom: 90px;
+            left:220px;
+        }
+
+        .construction p {
+            display: inline;
+            padding: 10px;
+            position: relative;
+            margin-top: 0px;
+            top:20px;
+            float: left;
+            left:210px;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: -20px;
+            right: 10px;
+        }
+
+        @media(min-width:650px) and (max-width:1200px){
+            body{
+            background-color:lightcoral;
+        }
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h3>Ressimen Rodriques.com</h3>
+    </div>
+    <h2>We are a <span>Creative</span> Design Agency</h2>
+    <div class="main">        
+        <div class="beauty">
+            <img src="pink-flowers-with-defocused-background.jpg">
+            <h4>Beauty</h4>
+            <p>We strive to create the most <br>beautiful websites for all<br> your needs.<br>
+               Working closely with you<br> to design and develop an amazing <br>website for your business.</p>
+        </div>
+        <div class="construction">
+            <img src="construction.jpeg">
+            <h4>Construction</h4>
+            <p>Built by our team of <br>professional developers, we ensure <br>the most rigourous and modern websites.<br>
+            Built from scratch using HTML and CSS.<br>
+            Only the best for you.
+            </p>
+        </div>
+    </div>
+     <div class="footer">
+        <h6>Create.Develop.Design</h6>
+    </div>
+</body>
+</html>
